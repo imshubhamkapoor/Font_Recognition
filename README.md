@@ -37,10 +37,10 @@ I ran the package several times in CLI setting different parameters every time t
 `python run.py -c <no. of images>`
 
 - Run the main file to produce sine-wave distortion consisting of 10% of the dataset. Argument -d has 3 possible values:
--- None
--- Sine wave
--- Cosine wave
--- Random
+* None
+* Sine wave
+* Cosine wave
+* Random
 
 `python run.py -c <no. of images> -d <1>`
 
