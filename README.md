@@ -69,20 +69,27 @@ I ran the package several times in CLI setting different parameters every time t
 - **utils.py** It contains the functions, models along with any supporting code, which is imported by main files for implementation - train.py and test.py
 
 ## Installation
-The Code is written in Jupyter Notebook.
+The Code is written in Python and implemented using tensorflow.
 
-Additional Packages that are required are: Numpy, Pandas, MatplotLib, Pytorch, and PIL. You can donwload them using pip
+Additional Packages that are required are Numpy, MatplotLib, PIL, Scikit-image, and Tensorflow. You can download them using pip
 
-`pip install numpy pandas matplotlib pil`
+`pip install numpy`
+`pip install matplotlib`
+`pip install pil`
+`pip install skimage`
+`pip install tensorflow`
 
-In order to intall Pytorch head over to the [Pytorch](https://pytorch.org/get-started/locally/) website and follow the instructions given.
+To install TensorFlow head over to the [Tensorflow](https://www.tensorflow.org/install/pip) link and follow the instructions given.
 
 ## GPU/CPU
 
-As this project uses deep CNNs, for training of network you need to use a GPU. However after training you can always use normal CPU for the prediction phase.
+As this project uses CNN with a huge amount of parameters for training, you need to use a GPU.
 
 ## License
-[MIT License](https://github.com/imshubhamkapoor/Kuzushiji_MNIST_Japanese_Character_Classification/blob/master/LICENSE)
+[MIT License](https://github.com/imshubhamkapoor/Font_Recognition/blob/master/LICENSE)
 
 ## Author
 Shubham Kapoor
+
+## Credits
+Edouard Belval - TRDG (Text Recognition Data Generator) package [link](https://textrecognitiondatagenerator.readthedocs.io/en/latest/index.html)
