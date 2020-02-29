@@ -56,6 +56,8 @@ I ran the package several times in CLI setting different parameters every time t
 
 `python run.py -c <no. of images> -bl <blur radius> -rbl <True>`
 
+**NOTE:** All the resulting images are pre-processed after cropping to 100x100 pixels. The input dataset must be of fixed dimensions before passing them into the model for training.
+
 ## Files Description
 
 - **main_file.ipynb** It contains the full code and is used to build the model using the jupyter notebook. It can be used independently to see how the model works.
