@@ -31,10 +31,26 @@ I have kept my package in the [trdg](https://github.com/imshubhamkapoor/Font_Rec
 
 ### How I created my dataset?
 
-I ran the package several times in CLI setting different parameters every time to create some variation in the dataset:
+I ran the package several times in CLI setting different parameters every time to create some distortion in the dataset:
 - Run the main file to produce basic images consisting of 70% of the dataset. 
 
 `python run.py -c <no. of images>`
+
+- Run the main file to produce sine-wave distortion consisting of 10% of the dataset. -d argument which as 3 possible values:
+
+    0: None
+    1: Sine wave
+    2: Cosine wave
+    3: Random
+
+
+`python run.py -c <no. of images> -d <1>`
+
+- Run the main file to produce random wave distortion consisting of 10% of the dataset. 
+
+`python run.py -c <no. of images> -d <3>`
+
+
 
 ## Files Description
 
