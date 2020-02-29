@@ -12,7 +12,7 @@ The project is broken down into multiple steps:
 
 The whole project is implemented in tensorflow.
 
-### Dataset Description
+#### Dataset Description
 
 Adobe VFR dataset was the first large-scale, fine-grained benchmark of font text images, for the task of font recognition and retrieval. But its size was very huge and 
 ![](https://raw.githubusercontent.com/rois-codh/kmnist/master/images/kmnist_examples.png)
