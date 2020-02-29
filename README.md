@@ -31,8 +31,9 @@ I have kept my package in the [trdg](https://github.com/imshubhamkapoor/Font_Rec
 
 ### How I created my dataset?
 
-I ran the package several times in CLI setting different parameters every time to create some variation in the dataset.
-Run the main file to produce basic images consisting of 70% of the dataset. 
+I ran the package several times in CLI setting different parameters every time to create some variation in the dataset:
+- Run the main file to produce basic images consisting of 70% of the dataset. 
+
 `python run.py -c <no. of images>`
 
 ## Files Description
