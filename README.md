@@ -56,18 +56,17 @@ I ran the package several times in CLI setting different parameters every time t
 
 `python run.py -c <no. of images> -bl <blur radius> -rbl <True>`
 
-**NOTE:** All the resulting images are pre-processed after cropping to 100x100 pixels. The input dataset must be of fixed dimensions before passing them into the model for training.
+**NOTE:** All the resulting images are pre-processed by cropping them to 100x100 pixels. The input dataset must be of fixed dimensions before passing them into the model for training.
 
 ## Files Description
 
-- **main_file.ipynb** It contains the full code and is used to build the model using the jupyter notebook. It can be used independently to see how the model works.
-- **kmnist_classmap.csv** It is used in ipynb file to map from class IDs to unicode characters for Kuzushiji-MNIST.
-- **kmnist-train-images.npz** It contains the training dataset of 60,000 images (28x28 grayscale) provided in a NumPy format.
-- **kmnist-test-images.npz** It contains the test dataset of 10,000 images (28x28 grayscale) provided in a NumPy format.
-- **kmnist-train-labels.npz** It contains the training labels of 60,000 images provided in a NumPy format for training dataset.
-- **kmnist-test-labels.npz** It contains the test labels of 10,000 images provided in a NumPy format for test dataset.
-
-**NOTE:** kmnist-[train/test]-[images/labels].npz: These files contain the Kuzushiji-MNIST as compressed numpy arrays, and can be read with: arr = np.load(filename)['arr_0']. We recommend using these files to load the dataset.
+- **trdg** The (Text Recognition Data Generator) [TRDG](https://textrecognitiondatagenerator.readthedocs.io/en/latest/index.html) package created by Edouard Belval in Python. It is a synthetic data generator for text recognition.
+- **train** It contains the training dataset of 100 types of fonts consisting of 1000 sample images per font (100x100 pixels RGB) provided in a jpeg format.
+- **valid** It contains the validation dataset of 100 types of fonts consisting of 200 sample images per font (100x100 pixels RGB) provided in a jpeg format.
+- **test** It contains the test dataset. Any test image can be put here for prediction.
+- **train.py** It contains the code for loading and pre-processing the dataset. It is also used in training the model using tensorflow and saving it for further use.
+- **test.py** It contains the code for loading and pre-processing the image for testing. The pre-trained model in train.py is loaded for making the prediction.
+- **utils.py** It contains the functions, models along with any supporting code, which is imported by main files for implementation - train.py and test.py
 
 ## Installation
 The Code is written in Jupyter Notebook.
