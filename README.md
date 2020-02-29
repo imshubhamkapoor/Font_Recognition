@@ -37,10 +37,10 @@ I ran the package several times in CLI setting different parameters every time t
 `python run.py -c <no. of images>`
 
 - Run the main file to produce sine-wave distortion consisting of 10% of the dataset. Argument -d has 3 possible values:
-1. None
-2. Sine wave
-3. Cosine wave
-4. Random
+0. None
+1. Sine wave
+2. Cosine wave
+3. Random
 
 `python run.py -c <no. of images> -d <1>`
 
@@ -48,7 +48,13 @@ I ran the package several times in CLI setting different parameters every time t
 
 `python run.py -c <no. of images> -d <3>`
 
+- Run the main file to produce skewed fonts images consisting of 5% of the dataset. Argument -k is the skew angle and -rk is set to True to enable random skewing between the range of positive and negative k
 
+`python run.py -c <no. of images> -k <skew angle> -rk True`
+
+- Run the main file to apply the gaussian blur to the resulting sample consisting of 5% of the dataset. Argument -bl is an integer defining the blur radius and -rbl is set to True to enable random blur between the range of positive and negative bl.
+
+`python run.py -c <no. of images> -bl <blur radius> -rbl True`
 
 ## Files Description
 
