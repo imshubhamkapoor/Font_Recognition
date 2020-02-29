@@ -50,11 +50,11 @@ I ran the package several times in CLI setting different parameters every time t
 
 - Run the main file to produce skewed fonts images consisting of 5% of the dataset. Argument -k is the skew angle and -rk is set to True to enable random skewing between the range of positive and negative k
 
-`python run.py -c <no. of images> -k <skew angle> -rk True`
+`python run.py -c <no. of images> -k <skew angle> -rk <True>`
 
 - Run the main file to apply the gaussian blur to the resulting sample consisting of 5% of the dataset. Argument -bl is an integer defining the blur radius and -rbl is set to True to enable random blur between the range of positive and negative bl.
 
-`python run.py -c <no. of images> -bl <blur radius> -rbl True`
+`python run.py -c <no. of images> -bl <blur radius> -rbl <True>`
 
 ## Files Description
 
